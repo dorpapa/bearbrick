@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slide</title>
+
+    <!-- jquery.cdn -->
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+    
+    <h1>
+        00
+    </h1>
+    
+    <nav>
+        <ul>
+            <li><a href="#">artWork01~</a></li>
+            <li><a href="#">artWork06~</a></li>
+            <li><a href="#">artWork10~</a></li>
+            <li><a href="#">artWork16~</a></li>
+        </ul>
+    </nav>
+    
+    <section>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+    </section>
+
+    <style>
+
+* {
+        margin: 0;
+        padding: 0;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+
+    body {
+        width: 100%;
+        height: 4000px;
+        background-color: #ddd;
+    }
+
+    h1 {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 5;
+    }
+
+    nav {
+        position: fixed;
+        
+        top: 50%;
+        margin-top: -280px;
+        left: 60px;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav li {
+        margin-right: 25px;
+    }
+
+    nav li a {
+        display: block;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    section {
+        position: fixed;
+        top: 50%;
+        left: 0;
+        margin-top: -250px;
+        
+
+        height: 500px;
+        width: 4000px;
+        transition: all 1s;
+    }
+
+    section article {
+        width: 180px;
+        height: 400px;
+        background-color: #fff;
+        float: left;
+        margin: 10px;
+    }
+
+
+    </style>
+
+    <script>
+
+    $(document).ready(function(){
+
+        $(window).scroll(function(){
+
+            let sc = $(this).scrollTop();
+            $('h1').text(sc);
+
+
+            $('section').css({'left': -sc})
+            // $('section').stop().animate({'left':-sc}, 200)
+        })
+
+
+    })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+/* Shrikhand google-font  */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Shrikhand&display=swap'); 
+
+/* Permanent Marker google-font */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Permanent+Marker&family=Shrikhand&display=swap');
+
+/* google-font Roboto cdn */
+/* thin 100, regular 400, medium 500, bold 700, bold 900*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+/* 전체 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    color: #131313;
+    text-decoration: none;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    color: #131313;
+}
+
+
+/* layout */
+
+
+.landing {
+
+}
+
+.landing header {
+    display: flex;
+    justify-content: space-around;
+}
+
+header .gnb {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+header h1 {
+    background-image: url(img/keword/bg/logo1.png);
+    width: 124px;
+    height: 114px;
+    text-indent: -9999px;
+}
+
+.gnb li a {
+    display: block;
+    padding: 20px 30px;
+}
+
+header .util {
+    display: flex;
+    justify-content: space-around;
+   
+}
+.util li a  {
+    display: block;
+    padding: 20px 30px;
+}
+
+.landing .videoMask {
+    overflow: hidden;
+    position: relative;
+    width: 1600px; 
+    height: 850px;
+    border-radius: 30px;
+    
+    margin-left: 160px;
+    
+}
+
+.landing .videoMask video {
+  position: absolute;
+  
+    
+    
+}
